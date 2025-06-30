@@ -240,7 +240,7 @@ Social Media and main content
   grid-template-columns: repeat(28, 1fr);
 }
 
-.maincontenybody {
+.maincontentbody {
   height: 100%;
   display: grid;
   grid-column: 1 / 31;
@@ -324,6 +324,7 @@ Social Media and main content
 .section-box h2 span {
   color: #0a5f0a;
 }
+
 /*****************************************
 Social Media and main content
 ******************************************/
@@ -339,7 +340,6 @@ About
   justify-content: flex-start;
 }
 
-/* About Section Final Styling */
 .about-grid p {
   font-size: 1rem;
   line-height: 1.7;
@@ -690,10 +690,10 @@ Footer
   transform: translateY(0);
 }
 
-
 /*****************************************
 Footer
 ******************************************/
+
 @media (min-width: 1280px) and (max-width: 1378px) {
   .education-card {
     max-width: 100%;
@@ -730,6 +730,10 @@ Footer
 
   .itemlist {
     display: none;
+  }
+
+  .itemlist li a {
+    font-size: 12px;
   }
 
   .hamburger {
@@ -844,6 +848,12 @@ Footer
     max-width: 100%;
     width: 100%;
     margin: 0 auto;
+  }
+
+  .project-img img,
+  .cert-img img,
+  .intern-img img {
+    object-fit: fill;
   }
 
   .cert-btns .btn-view {
@@ -1179,18 +1189,7 @@ Footer
     max-width: 100%;
     width: 95%;
     margin: 0 auto;
-  }
-
-  .project-card {
-    height: 20rem;
-  }
-
-  .certificate-card {
-    height: 18rem;
-  }
-
-  .internship-card {
-    height: 18rem;
+    height: 22rem;
   }
 
   .project-info,
@@ -1216,7 +1215,7 @@ Footer
   .project-img img,
   .cert-img img,
   .intern-img img {
-    height: 8rem;
+    height: 11rem;
   }
 
   .cert-img img {
@@ -1350,7 +1349,7 @@ Footer
   .cert-img img,
   .intern-img img {
     height: 6rem;
-    object-fit: contain;
+    object-fit: fill;
   }
 
   .project-info h3,
